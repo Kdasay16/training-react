@@ -12,17 +12,32 @@ class App extends Component {
 
       <div className="App">
         <Header />
-        <p> Hey </p>
         <Intro />
-
       </div>
     );
   }
 }
 
+class Header extends Component {
+  render(){
+    return(
+      <div>
+        <div className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h2>Welcome to React</h2>
+        </div>
+      </div>
+    );
+  }
+}
 
-
-
+class Intro extends Component {
+  render() {
+    <div>
+      <p className="App-intro">Let's get started!</p>
+    </div>
+  }
+}
 
 
 
